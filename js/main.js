@@ -58,6 +58,26 @@ $(document).ready(function() {
       	nextArrow: $('.flat_block_left_for_arrows_next')
     });
 
+    $(".project_block_item").each(function() {
+
+        $(this).find(".project_block_item_img_slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            dots: false
+        });
+      
+    });
+
+    $(".project_block_item_img_prev").click(function() {
+        $(this).parent().find(".project_block_item_img_slider").slick('slickPrev');
+    });
+
+    $(".project_block_item_img_next").click(function(){
+        $(this).parent().find(".project_block_item_img_slider").slick('slickNext');
+    });
+
     $('.flat_block_left_nav').slick({
         slidesToShow: 3,
         mobileFirst: true,
@@ -84,6 +104,17 @@ $(document).ready(function() {
         ]
     });
 
+    $(".review_block").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        fade: true,
+        appendDots: $(".review_nav_dots"),
+        prevArrow: $(".review_nav_prev"),
+        nextArrow: $(".review_nav_next")
+    });
+
     $(".region_nav_item").click(function() {
         $(".region_nav_item").removeClass("active");
         $(this).addClass("active");
@@ -102,6 +133,22 @@ $(document).ready(function() {
         dots: false,
         arrows: false,
         variableWidth: true
+    });
+
+    $(".contacts_office_nav_btns_item").click(function() {
+        $(".contacts_office_nav_btns_item").removeClass("active");
+        $(this).addClass("active");
+        var id = $(this).attr("data-target");
+        $(".contacts_office_main_item").removeClass("active");
+        $(`#${id}`).addClass("active");
+    });
+
+    $(".services_repair_rates_nav_item").click(function() {
+        $(".services_repair_rates_nav_item").removeClass("active");
+        $(this).addClass("active");
+        var id = $(this).attr("data-target");
+        $(".services_repair_rates_main_item").removeClass("active");
+        $(`#${id}`).addClass("active");
     });
 
     $(".main_bottom_content_right").click(function() {
