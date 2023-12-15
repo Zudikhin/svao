@@ -284,8 +284,6 @@
       </div>
     </section>
 
-
-
     <div class="under_footer">
       <div class="container">
         <div class="under_footer_list">
@@ -561,8 +559,483 @@
       </div>
     </footer>
 
+    <div class="back_modal"></div>
+
+    <div class="back_menu"></div>
+
+    <div class="modal_filter">
+      <div class="modal_filter_top">
+        <h3>ФИЛЬТРЫ</h3>
+        <div class="modal_filter_top_btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 20L4 4M20 4L4 20" stroke="#3A31BD" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="choice_block_sidebar_value">
+        <p>Цена</p>
+        <div class="choice_block_sidebar_value_wrap">
+          <div class="choice_block_sidebar_value_wrap_item">
+            <span>$</span>
+          </div>
+          <div class="choice_block_sidebar_value_wrap_item active">
+            <span>₽</span>
+          </div>
+        </div>
+      </div>
+      <div id="slider_mob" class="choice_block_sidebar_polzunok"></div>
+      <div class="choice_block_sidebar_price">
+        <div class="choice_block_sidebar_price_top">
+          <span class="choice_block_sidebar_price_top_txt">От</span>
+          <div class="choice_block_sidebar_price_top_block">
+            <input id="fromMob" readonly inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')"  />
+            <span>₽</span>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_price_bot">
+          <span class="choice_block_sidebar_price_bot_txt">До</span>
+          <div class="choice_block_sidebar_price_bot_block">
+            <input id="toMob" readonly inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')"  />
+            <span>₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="choice_block_sidebar_accordion">
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Кол-во спален</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите количество">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="1" for="">
+                1
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="2" for="">
+                2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="3" for="">
+                3
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Отделка</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите отделку">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="Отделка 1" for="">
+                Отделка 1
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Отделка 2" for="">
+                Отделка 2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Отделка 3" for="">
+                Отделка 3
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Местоположение</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите местоположение">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="Москва" for="">
+                Москва
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Казань" for="">
+                Казань
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Донецк" for="">
+                Донецк
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Луганск" for="">
+                Луганск
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Волгоград" for="">
+                Волгоград
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Мурманск" for="">
+                Мурманск
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Краснодар" for="">
+                Краснодар
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Корпус</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите корпус">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="Корпус 1" for="">
+                Корпус 1
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Корпус 2" for="">
+                Корпус 2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Корпус 3" for="">
+                Корпус 3
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Корпус 4" for="">
+                Корпус 4
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="Корпус 5" for="">
+                Корпус 5
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Этаж</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите этаж">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="1" for="">
+                1
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="2" for="">
+                2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="3" for="">
+                3
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="4" for="">
+                4
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="5" for="">
+                5
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="6" for="">
+                6
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="7" for="">
+                7
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="8" for="">
+                8
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="9" for="">
+                9
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="10" for="">
+                10
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="choice_block_sidebar_accordion_item">
+          <div class="choice_block_sidebar_accordion_item_top">
+            <span>Площадь</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.77835 8.0343C3.72373 8.05694 3.6741 8.09013 3.63232 8.13197C3.59048 8.17376 3.55729 8.22338 3.53465 8.27801C3.512 8.33263 3.50035 8.39119 3.50035 8.45032C3.50035 8.50945 3.512 8.568 3.53465 8.62263C3.55729 8.67725 3.59048 8.72688 3.63232 8.76867L11.7317 16.868C11.7735 16.9099 11.8231 16.9431 11.8777 16.9657C11.9323 16.9883 11.9909 17 12.05 17C12.1092 17 12.1677 16.9883 12.2223 16.9657C12.277 16.9431 12.3266 16.9099 12.3684 16.868L20.4677 8.76867C20.5096 8.72686 20.5427 8.67723 20.5653 8.62261C20.588 8.56799 20.5996 8.50944 20.5996 8.45032C20.5996 8.3912 20.588 8.33265 20.5653 8.27803C20.5427 8.22341 20.5096 8.17377 20.4677 8.13197C20.4259 8.09016 20.3763 8.057 20.3217 8.03437C20.2671 8.01175 20.2085 8.0001 20.1494 8.0001C20.0903 8.0001 20.0317 8.01175 19.9771 8.03437C19.9225 8.057 19.8729 8.09016 19.831 8.13197L12.5 15.463C12.1448 15.7696 11.9552 15.7333 11.6001 15.463L4.26902 8.13197C4.22723 8.09013 4.1776 8.05694 4.12298 8.0343C4.06835 8.01165 4.0098 8 3.95067 8C3.89153 8 3.83298 8.01165 3.77835 8.0343Z" fill="#3A31BD" stroke="#3A31BD" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="choice_block_sidebar_accordion_item_body">
+            <div class="choice_block_sidebar_accordion_item_body_search">
+              <input type="text" class="search" placeholder="Введите площадь">
+              <div class="choice_block_sidebar_accordion_item_body_search_remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.6673 16.6668L3.33398 3.3335M16.6673 3.3335L3.33398 16.6668" stroke="#0C084D" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="choice_block_sidebar_accordion_item_body_list">
+              <label data-target="65 м2" for="">
+                65 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="70 м2" for="">
+                70 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="80 м2" for="">
+                80 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="90 м2" for="">
+                90 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="100 м2" for="">
+                100 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="110 м2" for="">
+                110 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="120 м2" for="">
+                120 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="130 м2" for="">
+                130 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="140 м2" for="">
+                140 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label data-target="150 м2" for="">
+                150 м2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="choice_block_sidebar_btns">
+        <div class="choice_block_sidebar_apply">
+          <span>Применить</span>
+        </div>
+        <div class="choice_block_sidebar_cancel">
+          <span>Сбросить</span>
+        </div>    
+      </div>
+      
+    </div>
+
+    <div class="dropdown">
+      <div class="container">
+        <ul class="dropdown_list">
+          <li>
+            <a href="">ЖК “Кольская 8”</a>
+          </li>
+          <li>
+            <a href="">ЖК “Клементин”</a>
+          </li>
+          <li>
+            <a href="">ЖК “Руставели 14”</a>
+          </li>
+          <li>
+            <a href="">ЖК “Upside towers”</a>
+          </li>
+          <li>
+            <a href="">ЖК “В стремлении к свету”</a>
+          </li>
+        </ul>
+        <div class="dropdown_block">
+          <div class="dropdown_block_left">
+            <div class="dropdown_block_left_item">
+              <h4>Каталог</h4>
+              <ul>
+                <li>
+                  <a href="#">Все предложения</a>
+                </li>
+                <li>
+                  <a href="#">Новостройки</a>
+                </li>
+                <li>
+                  <a href="#">От застройщика</a>
+                </li>
+                <li>
+                  <a href="#">Подборки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown_block_left_item">
+              <h4>House mall</h4>
+              <ul>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
+                </li>
+                <li>
+                  <a href="#">Партнеры</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown_block_left_item">
+              <h4>СВАО</h4>
+              <ul>
+                <li>
+                  <a href="#">Об округе</a>
+                </li>
+                <li>
+                  <a href="#">Районы</a>
+                </li>
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+                <li>
+                  <a href="#">Галлерея</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown_block_right">
+            <div class="dropdown_block_right_left">
+              <div class="dropdown_block_right_left_title">
+                <span>Оформи ипотеку</span>
+                <div class="feature">
+                  <p>БЕЗ</p>
+                </div>
+                <span class="ml">первоначального</span>
+                <span>взноса</span>
+              </div>
+              <a href="#">
+                <span>Узнать больше</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M11.4102 16.778C11.3765 16.7443 11.3498 16.7043 11.3316 16.6604C11.3133 16.6164 11.304 16.5692 11.304 16.5216C11.304 16.474 11.3133 16.4269 11.3316 16.3829C11.3498 16.3389 11.3765 16.2989 11.4102 16.2653L17.3132 10.3623L2.24643 10.3623C2.15034 10.3623 2.05818 10.3241 1.99023 10.2562C1.92229 10.1882 1.88411 10.0961 1.88411 9.99999C1.88411 9.9039 1.92229 9.81174 1.99023 9.74379C2.05818 9.67585 2.15034 9.63768 2.24643 9.63768L17.3132 9.63768L11.4102 3.7347C11.3766 3.70103 11.3499 3.66107 11.3316 3.61709C11.3134 3.5731 11.304 3.52596 11.304 3.47836C11.304 3.43075 11.3134 3.38361 11.3316 3.33963C11.3499 3.29565 11.3766 3.25569 11.4102 3.22202C11.4439 3.18836 11.4838 3.16166 11.5278 3.14344C11.5718 3.12522 11.6189 3.11584 11.6666 3.11584C11.7142 3.11584 11.7613 3.12522 11.8053 3.14344C11.8493 3.16166 11.8892 3.18836 11.9229 3.22202L18.4445 9.74365C18.4782 9.7773 18.5049 9.81726 18.5232 9.86124C18.5414 9.90523 18.5508 9.95237 18.5508 9.99999C18.5508 10.0476 18.5414 10.0947 18.5232 10.1387C18.5049 10.1827 18.4782 10.2227 18.4445 10.2563L11.9229 16.778C11.8892 16.8116 11.8493 16.8384 11.8053 16.8566C11.7613 16.8748 11.7142 16.8842 11.6666 16.8842C11.6189 16.8842 11.5718 16.8748 11.5278 16.8566C11.4838 16.8384 11.4439 16.8116 11.4102 16.778Z" fill="white" stroke="white"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="dropdown_block_right_right">
+              <div class="dropdown_block_right_right_img">
+                <img src="img/flat/art.png" alt="">
+              </div>
+              <a href="#">
+                <span>Узнать больше</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M11.4102 16.778C11.3765 16.7443 11.3498 16.7043 11.3316 16.6604C11.3133 16.6164 11.304 16.5692 11.304 16.5216C11.304 16.474 11.3133 16.4269 11.3316 16.3829C11.3498 16.3389 11.3765 16.2989 11.4102 16.2653L17.3132 10.3623L2.24643 10.3623C2.15034 10.3623 2.05818 10.3241 1.99023 10.2562C1.92229 10.1882 1.88411 10.0961 1.88411 9.99999C1.88411 9.9039 1.92229 9.81174 1.99023 9.74379C2.05818 9.67585 2.15034 9.63768 2.24643 9.63768L17.3132 9.63768L11.4102 3.7347C11.3766 3.70103 11.3499 3.66107 11.3316 3.61709C11.3134 3.5731 11.304 3.52596 11.304 3.47836C11.304 3.43075 11.3134 3.38361 11.3316 3.33963C11.3499 3.29565 11.3766 3.25569 11.4102 3.22202C11.4439 3.18836 11.4838 3.16166 11.5278 3.14344C11.5718 3.12522 11.6189 3.11584 11.6666 3.11584C11.7142 3.11584 11.7613 3.12522 11.8053 3.14344C11.8493 3.16166 11.8892 3.18836 11.9229 3.22202L18.4445 9.74365C18.4782 9.7773 18.5049 9.81726 18.5232 9.86124C18.5414 9.90523 18.5508 9.95237 18.5508 9.99999C18.5508 10.0476 18.5414 10.0947 18.5232 10.1387C18.5049 10.1827 18.4782 10.2227 18.4445 10.2563L11.9229 16.778C11.8892 16.8116 11.8493 16.8384 11.8053 16.8566C11.7613 16.8748 11.7142 16.8842 11.6666 16.8842C11.6189 16.8842 11.5718 16.8748 11.5278 16.8566C11.4838 16.8384 11.4439 16.8116 11.4102 16.778Z" fill="white" stroke="white"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown_links">
+          <a href="#">Telegram</a>
+          <a href="#">WatsApp</a>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/jquery.nice-select.js"></script>
     <script src="js/main.js"></script>
 
@@ -572,3 +1045,177 @@
 <script>
   $('select').niceSelect();
 </script>
+
+<script>
+  var slider = document.getElementById('slider');
+
+  noUiSlider.create(slider, {
+      start: [1000000, 100000000],
+      connect: true,
+      format:{
+            to: (v) => v | 0,
+            from: (v) => v | 0
+      },
+      step: 100000,
+      range: {
+          'min': 1000000,
+          'max': 100000000
+      }
+  });
+
+  slider.noUiSlider.on('update', function (values, handle) {
+    var from = values[0];
+    var to = values[1];
+    $("#from").val(from);
+    $("#to").val(to);
+  });
+
+
+
+  var sliderMob = document.getElementById('slider_mob');
+
+  noUiSlider.create(sliderMob, {
+      start: [1000000, 100000000],
+      connect: true,
+      format:{
+            to: (v) => v | 0,
+            from: (v) => v | 0
+      },
+      step: 100000,
+      range: {
+          'min': 1000000,
+          'max': 100000000
+      }
+  });
+
+  sliderMob.noUiSlider.on('update', function (values, handle) {
+    var from = values[0];
+    var to = values[1];
+    $("#fromMob").val(from);
+    $("#toMob").val(to);
+  });
+
+
+</script>
+
+<script>
+
+  $('.search').on('keyup change', function() {
+
+    $(this).parent().parent().find('label').each(function() {
+      var that = $(this);
+      that.removeClass('hidden');
+    });
+
+    var tt = $(this);
+
+    if (tt.val() != '') {
+      $(this).parent().find(".choice_block_sidebar_accordion_item_body_search_remove").addClass("active");
+      $(this).parent().parent().find('label').each(function() {
+        var that = $(this);
+        if (!(that.attr("data-target")).match(new RegExp(tt.val(),'ig'))){
+          that.addClass('hidden');
+        }
+      });
+    } else {
+      $(this).parent().find(".choice_block_sidebar_accordion_item_body_search_remove").removeClass("active");
+    }
+
+  });
+
+  $(".choice_block_sidebar_accordion_item_body_search_remove").click(function() {
+    $(this).parent().find(".search").val("");
+    $(this).parent().parent().find('label').each(function() {
+      var that = $(this);
+      that.removeClass('hidden');
+    });
+    $(this).removeClass("active");
+  });
+
+</script>
+
+<script>
+
+  ymaps.ready(init);
+  
+  function init () {
+      var myMap = new ymaps.Map('map', {
+              center: [55.76, 37.64],
+              zoom: 10
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+          objectManager = new ymaps.ObjectManager({
+              // Чтобы метки начали кластеризоваться, выставляем опцию.
+              clusterize: true,
+              // ObjectManager принимает те же опции, что и кластеризатор.
+              gridSize: 32,
+              clusterDisableClickZoom: true
+          });
+  
+      // Чтобы задать опции одиночным объектам и кластерам,
+      // обратимся к дочерним коллекциям ObjectManager.
+      objectManager.objects.options.set('preset', 'islands#greenDotIcon');
+      objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
+      myMap.geoObjects.add(objectManager);
+  
+      objectManager.add(
+        {
+          "type": "FeatureCollection",
+          "features": [
+              {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.744522, 37.616378]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.780898, 37.642889]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [55.793559, 37.435983]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.800584, 37.675638]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [55.716733, 37.589988]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [55.775724, 37.56084]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [55.822144, 37.433781]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 10, "geometry": {"type": "Point", "coordinates": [55.87417, 37.669838]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 11, "geometry": {"type": "Point", "coordinates": [55.71677, 37.482338]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 12, "geometry": {"type": "Point", "coordinates": [55.78085, 37.75021]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 13, "geometry": {"type": "Point", "coordinates": [55.810906, 37.654142]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 14, "geometry": {"type": "Point", "coordinates": [55.865386, 37.713329]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 15, "geometry": {"type": "Point", "coordinates": [55.847121, 37.525797]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 16, "geometry": {"type": "Point", "coordinates": [55.778655, 37.710743]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 17, "geometry": {"type": "Point", "coordinates": [55.623415, 37.717934]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 18, "geometry": {"type": "Point", "coordinates": [55.863193, 37.737]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 19, "geometry": {"type": "Point", "coordinates": [55.86677, 37.760113]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 20, "geometry": {"type": "Point", "coordinates": [55.698261, 37.730838]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 21, "geometry": {"type": "Point", "coordinates": [55.6338, 37.564769]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 22, "geometry": {"type": "Point", "coordinates": [55.639996, 37.5394]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 23, "geometry": {"type": "Point", "coordinates": [55.69023, 37.405853]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 24, "geometry": {"type": "Point", "coordinates": [55.77597, 37.5129]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 25, "geometry": {"type": "Point", "coordinates": [55.775777, 37.44218]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 26, "geometry": {"type": "Point", "coordinates": [55.811814, 37.440448]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 27, "geometry": {"type": "Point", "coordinates": [55.751841, 37.404853]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 28, "geometry": {"type": "Point", "coordinates": [55.627303, 37.728976]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 29, "geometry": {"type": "Point", "coordinates": [55.816515, 37.597163]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 30, "geometry": {"type": "Point", "coordinates": [55.664352, 37.689397]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 31, "geometry": {"type": "Point", "coordinates": [55.679195, 37.600961]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 32, "geometry": {"type": "Point", "coordinates": [55.673873, 37.658425]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 33, "geometry": {"type": "Point", "coordinates": [55.681006, 37.605126]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.876327, 37.431744]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 35, "geometry": {"type": "Point", "coordinates": [55.843363, 37.778445]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 36, "geometry": {"type": "Point", "coordinates": [55.875445, 37.549348]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 37, "geometry": {"type": "Point", "coordinates": [55.662903, 37.702087]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 38, "geometry": {"type": "Point", "coordinates": [55.746099, 37.434113]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 39, "geometry": {"type": "Point", "coordinates": [55.83866, 37.712326]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 40, "geometry": {"type": "Point", "coordinates": [55.774838, 37.415725]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 41, "geometry": {"type": "Point", "coordinates": [55.871539, 37.630223]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 42, "geometry": {"type": "Point", "coordinates": [55.657037, 37.571271]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 43, "geometry": {"type": "Point", "coordinates": [55.691046, 37.711026]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 44, "geometry": {"type": "Point", "coordinates": [55.803972, 37.65961]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 45, "geometry": {"type": "Point", "coordinates": [55.616448, 37.452759]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 46, "geometry": {"type": "Point", "coordinates": [55.781329, 37.442781]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 47, "geometry": {"type": "Point", "coordinates": [55.844708, 37.74887]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 48, "geometry": {"type": "Point", "coordinates": [55.723123, 37.406067]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+              {"type": "Feature", "id": 49, "geometry": {"type": "Point", "coordinates": [55.858585, 37.48498]}, "properties": {"balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}}
+          ]
+        }
+      )
+  }
+  
+  </script>
